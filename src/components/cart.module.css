@@ -1,0 +1,108 @@
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:5rem;
+
+}
+
+.cartItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.productDetails {
+  padding: 20px;
+}
+
+.productTitle {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.productDescription {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.productPrice {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.productRating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.productRating span {
+  font-size: 18px;
+  color: #ffd700;
+  margin-right: 5px;
+}
+
+.quantityInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.removeButton {
+  padding: 8px 16px;
+  background-color: #ff6666;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: #ff4d4d;
+}
+
+.checkoutButton {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.checkoutButton:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
